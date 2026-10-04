@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formula 1</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<main>
+<section id="inicio" class="pagina activa">
+<h1>Formula 1</h1>
+<h2>Crea tu equipo</h2>
+<p>Selecciona una escudería, auto y corredores para crear tu equipo.</p>
+<img class="principal" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Red_Bull_Racing_RB22_of_Max_Verstappen_%28028A8078%29.jpg" alt="Formula 1">
+</section>
+
+<section id="autos" class="pagina">
+<h1>Autos</h1>
+<form id="formAutos">
+<label for="modelo">Modelo</label>
+<select id="modelo" name="modelo" required>
+<option value="">Selecciona</option>
+<option>Mercedes W17</option>
+<option>Red Bull RB22</option>
+</select>
+<label for="color">Color</label>
+<input type="color" id="color" name="color">
+<label>Foto</label>
+<img id="fotoAuto" class="foto" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Red_Bull_Racing_RB22_of_Max_Verstappen_%28028A8078%29.jpg" alt="Auto">
+<fieldset>
+<legend>Activo</legend>
+<label><input type="radio" name="activo" value="Si"> Sí</label>
+<label><input type="radio" name="activo" value="No"> No</label>
+</fieldset>
+<button type="submit">Guardar</button>
+</form>
+</section>
+
+<section id="escuderia" class="pagina">
+<h1>Escudería</h1>
+<form id="formEscuderia">
+<label for="nombreEscuderia">Nombre</label>
+<select id="nombreEscuderia" name="escuderia" required>
+<option value="">Selecciona</option>
+<option>Mercedes</option>
+<option>Red Bull</option>
+</select>
+<label for="descripcion">Descripción</label>
+<textarea id="descripcion" name="descripcion" rows="4"></textarea>
+<label>Foto</label>
+<img id="fotoEscuderia" class="foto" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Red_Bull_Racing_RB22_of_Max_Verstappen_%28028A8078%29.jpg" alt="Escuderia">
+<button type="submit">Guardar</button>
+</form>
+</section>
+
+<section id="corredor" class="pagina">
+<h1>Corredor</h1>
+<form id="formCorredor">
+<label for="piloto">Nombre</label>
+<select id="piloto" name="piloto" required>
+<option value="">Selecciona</option>
+<option>Max Verstappen</option>
+<option>Isack Hadjar</option>
+<option>George Russell</option>
+<option>Kimi Antonelli</option>
+</select>
+<label for="apellido">Apellido</label>
+<input type="text" id="apellido" name="apellido">
+<label for="edad">Edad</label>
+<input type="number" id="edad" name="edad">
+<fieldset>
+<legend>Género</legend>
+<label><input type="radio" name="genero" value="Masculino"> Masculino</label>
+<label><input type="radio" name="genero" value="Femenino"> Femenino</label>
+</fieldset>
+<label>Foto</label>
+<img id="fotoPiloto" class="foto piloto" src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Max_Verstappen_%2833964170645%29.jpg" alt="Piloto">
+<button type="submit">Guardar</button>
+</form>
+</section>
+
+<section id="relaciones" class="pagina">
+<h1>Relaciones</h1>
+<form id="formRelaciones">
+<label for="relEscuderia">Escudería</label>
+<select id="relEscuderia" name="escuderia">
+<option value="">Selecciona</option>
+<option value="mercedes">Mercedes</option>
+<option value="redbull">Red Bull</option>
+</select>
+<label for="relAuto">Auto</label>
+<select id="relAuto" name="auto"></select>
+<label for="relPiloto1">Corredor</label>
+<select id="relPiloto1" name="piloto1"></select>
+<label for="relPiloto2">Compañero</label>
+<select id="relPiloto2" name="piloto2"></select>
+<img id="fotoRelacion" class="foto" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Red_Bull_Racing_RB22_of_Max_Verstappen_%28028A8078%29.jpg" alt="Equipo">
+<button type="submit">Guardar</button>
+</form>
+</section>
+</main>
+
+<aside>
+<h2>Menú</h2>
+<nav>
+<button type="button" data-pagina="inicio">Inicio</button>
+<button type="button" data-pagina="autos">Autos</button>
+<button type="button" data-pagina="escuderia">Escudería</button>
+<button type="button" data-pagina="corredor">Corredor</button>
+<button type="button" data-pagina="relaciones">Relaciones</button>
+</nav>
+</aside>
+
+<footer>
+<span>Ricardo Valtierra González</span>
+<span>LDSM405</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:grid;grid-template-columns:1fr 190px;grid-template-rows:1fr 50px;font-family:Arial,sans-serif;background:#111;color:white}
+
+main{padding:30px;background:#181818}
+
+.pagina{display:none}
+
+.pagina.activa{display:block}
+
+h1{margin-top:0;padding-bottom:10px;border-bottom:2px solid #e10600}
+
+p{max-width:600px}
+
+aside{padding:20px;background:#050505;border-left:2px solid #555}
+
+aside h2{text-align:center;color:white}
+
+nav{display:flex;flex-direction:column;gap:12px}
+
+nav button{display:block;width:100%;padding:12px;background:#eee;color:#111;border:2px solid #aaa;font-size:15px;font-weight:bold;cursor:pointer}
+nav button:hover{background:#e10600;color:white}
+
+form{width:500px;max-width:100%}
+
+label{display:block;margin-top:10px}
+
+input,select,textarea{width:100%;padding:8px;margin-top:4px;background:#292929;color:white;border:1px solid #777}
+
+fieldset{margin-top:12px;border:1px solid #777}
+
+fieldset label{display:inline-block;margin-right:15px}
+
+input[type="radio"]{width:auto}
+
+form button{margin-top:15px;padding:10px 25px;background:#e10600;color:white;border:0;cursor:pointer}
+
+.foto{display:block;width:320px;height:180px;margin-top:10px;object-fit:cover;background:white;border:1px solid #777}
+.piloto{height:240px;object-fit:contain}
+
+.principal{width:70%;max-width:700px;max-height:420px;object-fit:cover;margin-top:25px;border-radius:8px}
+
+footer{grid-column:1/3;display:flex;justify-content:space-between;align-items:center;padding:0 20px;background:#050505;border-top:2px solid #555}
+@media(max-width:700px){body{display:block}aside{border-left:0;border-top:2px solid #555}.foto,.principal{width:100%;height:auto}footer{padding:15px}}
