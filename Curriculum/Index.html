@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Currículum de Ricardo Valtierra González, estudiante de Ingeniería en Desarrollo de Software 4to cuatrimestre.">
+  <title>Ricardo Valtierra | Currículum</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23b51f2c'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia' font-size='34' fill='white'%3ERV%3C/text%3E%3C/svg%3E">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#menu" tabindex="0">
+  <!-- NAVBAR FIJA -->
+  <nav id="menu" class="navbar navbar-expand-lg fixed-top bg-white border-bottom py-3" aria-label="Navegación principal">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-3" href="#inicio"><span class="sello">RV</span><span class="marca">RICARDO VALTIERRA<br><small>PORTAFOLIO PERSONAL</small></span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#enlaces" aria-controls="enlaces" aria-expanded="false" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="enlaces">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#perfil">Perfil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyecto">Proyecto</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencias">Experiencias</a></li>
+          <li class="nav-item"><a class="nav-link" href="#idiomas">Idiomas</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <!-- ENCABEZADO Y CARRUSEL -->
+    <header id="inicio" class="hero position-relative">
+      <div class="container">
+        <div class="d-flex justify-content-between border-bottom pb-3 mb-5"><span class="etiqueta">DESARROLLO DE SOFTWARE · UTL</span><span lang="ja">はじめまして。</span></div>
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <p class="etiqueta rojo">MI CARTA DE PRESENTACIÓN</p>
+            <h1 class="nombre mb-4">Ricardo<br>Valtierra<br><span>González.</span></h1>
+            <h2 class="h5 mb-3">Estudiante de Ingeniería en Desarrollo de Software</h2>
+            <p class="text-secondary mb-4">Mi formación conecta la programación, los proyectos escolares y mi interés por el idioma y la cultura japonesa.</p>
+            <a class="btn btn-rojo px-4 py-3" href="#proyecto">Conoce AccessWork</a>
+          </div>
+          <div class="col-lg-6">
+            <div class="marco p-3">
+              <p class="etiqueta mb-3">PROYECTOS Y EXPERIENCIAS</p>
+              <div id="carrusel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" aria-label="Galería de experiencias">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img id="accesswork-equipo" src="img/accesswork-equipo.jpg" class="img-fluid w-100 foto" alt="Equipo presentando AccessWork.">
+                    <div class="pt-3"><h3 class="h5">AccessWork</h3><p class="text-secondary mb-0">Prevención de riesgos y accesibilidad laboral.</p></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img id="conversacion-japones" src="img/conversacion-japones.png" class="img-fluid w-100 foto vertical" alt="Conversación en japonés en el evento.">
+                    <div class="pt-3"><h3 class="h5">Japonés fuera del aula</h3><p class="text-secondary mb-0">Conversaciones y entrevistas para practicar.</p></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img id="charla-emprendimiento" src="img/charla-emprendimiento.png" class="img-fluid w-100 foto vertical" alt="Charla universitaria de emprendimiento.">
+                    <div class="pt-3"><h3 class="h5">Aprender a emprender</h3><p class="text-secondary mb-0">Historias de éxito desde un proyecto integrador.</p></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img id="evento-japon" src="img/evento-japon.png" class="img-fluid w-100 foto" alt="Evento de empresas automotrices japonesas.">
+                    <div class="pt-3"><h3 class="h5">Un encuentro con Japón</h3><p class="text-secondary mb-0">Empresas, tecnología e intercambio cultural.</p></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img id="evento-toyota" src="img/evento-toyota.png" class="img-fluid w-100 foto vertical" alt="Exhibición de Toyota en el evento.">
+                    <div class="pt-3"><h3 class="h5">Industria automotriz</h3><p class="text-secondary mb-0">Una experiencia para explorar otras perspectivas.</p></div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end gap-2 border-top pt-3 mt-3">
+                  <button class="control" type="button" data-bs-target="#carrusel" data-bs-slide="prev" aria-label="Fotografía anterior">‹</button>
+                  <button class="control" type="button" data-bs-target="#carrusel" data-bs-slide="next" aria-label="Fotografía siguiente">›</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-secondary border-top pt-4 mt-5 mb-0">Universidad Tecnológica de León · Software · Idiomas · Cultura</p>
+      </div>
+    </header>
+    <!-- PERFIL Y FORMACIÓN -->
+    <section id="perfil" class="seccion">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5"><p class="etiqueta rojo">01 · PERFIL</p><h2 class="titulo">Una formación<br>en movimiento.</h2></div>
+          <div class="col-lg-7">
+            <h3 class="h4">Ingeniería en Desarrollo de Software</h3>
+            <p>Universidad Tecnológica de León</p>
+            <p class="text-secondary">Estudio redes, programación estructurada, programación orientada a objetos, bases de datos y física.</p>
+            <p class="text-secondary mb-0">Complemento mi carrera con cursos de programación y japonés, y aplico lo aprendido en proyectos escolares.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TARJETAS DE HABILIDADES -->
+    <section id="habilidades" class="seccion habilidades">
+      <div class="container">
+        <p class="etiqueta">02 · HABILIDADES</p><h2 class="titulo mb-4">Mis herramientas de aprendizaje.</h2>
+        <div class="row g-4">
+          <div class="col-md-4"><article class="card h-100 p-4">
+            <h3 class="h4">Programación</h3><p>Programación estructurada y orientada a objetos.</p>
+            <p class="mb-0 rojo-claro">Java · C · POO</p>
+          </article></div>
+          <div class="col-md-4"><article class="card h-100 p-4">
+            <h3 class="h4">Bases de datos</h3><p>Formación en bases de datos relacionales.</p>
+            <p class="mb-0 rojo-claro">MySQL · SQL</p>
+          </article></div>
+          <div class="col-md-4"><article class="card h-100 p-4">
+            <h3 class="h4">Base técnica</h3><p>Fundamentos que acompañan mi aprendizaje en software.</p>
+            <p class="mb-0 rojo-claro">Redes · Física</p>
+          </article></div>
+        </div>
+      </div>
+    </section>
+    <!-- PROYECTO INTEGRADOR -->
+    <section id="proyecto" class="seccion">
+      <div class="container">
+        <p class="etiqueta rojo">03 · PROYECTO INTEGRADOR</p>
+        <article class="card proyecto border-0"><div class="row g-0 align-items-center">
+          <div class="col-lg-6 p-3"><img id="accesswork-prototipo" src="img/accesswork-prototipo.png" class="img-fluid w-100" loading="lazy" alt="Pantallas del prototipo de AccessWork."></div>
+          <div class="col-lg-6"><div class="card-body p-4 p-lg-5">
+            <h2 class="titulo mb-3">AccessWork<span class="rojo">.</span></h2>
+            <p>Propuesta de un sistema para ayudar a las empresas a prevenir riesgos y promover un ambiente laboral más accesible.</p>
+            <p class="text-secondary">Un proyecto escolar que conecta el software con el cuidado de las personas.</p>
+            <button class="btn btn-rojo px-4 py-3" type="button" data-bs-toggle="modal" data-bs-target="#modalProyecto">Explorar la propuesta</button>
+          </div></div>
+        </div></article>
+      </div>
+    </section>
+    <!-- EXPERIENCIAS -->
+    <section id="experiencias" class="seccion experiencias">
+      <div class="container">
+        <p class="etiqueta rojo">04 · EXPERIENCIAS</p><h2 class="titulo mb-4">Lo que aprendo fuera del aula.</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-4"><article class="card h-100">
+            <img src="img/accesswork-equipo.jpg" class="card-img-top img-fluid foto" loading="lazy" alt="Presentación escolar de AccessWork.">
+            <div class="card-body p-4"><h3 class="h5">Compartir una propuesta</h3><p class="mb-0">Presentación de AccessWork y su enfoque en prevención de riesgos y accesibilidad laboral.</p></div>
+          </article></div>
+          <div class="col-md-6 col-xl-4"><article class="card h-100">
+            <img src="img/conversacion-japones.png" class="card-img-top img-fluid foto conversacion" loading="lazy" alt="Práctica de japonés durante el evento.">
+            <div class="card-body p-4"><h3 class="h5">Conversar en japonés</h3><p class="mb-0">Practiqué el idioma e hice entrevistas en un evento de empresas automotrices japonesas.</p></div>
+          </article></div>
+          <div class="col-md-6 col-xl-4"><article class="card h-100">
+            <img src="img/charla-emprendimiento.png" class="card-img-top img-fluid foto charla" loading="lazy" alt="Presentación de una charla de emprendimiento.">
+            <div class="card-body p-4"><h3 class="h5">Escuchar para aprender</h3><p class="mb-0">Conocí la historia de dos jóvenes que emprendieron con éxito desde su proyecto integrador.</p></div>
+          </article></div>
+        </div>
+      </div>
+    </section>
+    <!-- IDIOMAS -->
+    <section id="idiomas" class="seccion">
+      <div class="container"><div class="row g-5">
+        <div class="col-lg-5"><p class="etiqueta rojo">05 · IDIOMAS</p><h2 class="titulo">Otros idiomas.<br>Más conexiones.</h2></div>
+        <div class="col-lg-7">
+          <div class="border-bottom pb-4 mb-4"><h3 class="h4">Japonés <span class="rojo" lang="ja">日本語</span></h3><p class="mb-0">Nivel intermedio · Tres años de estudio · Cursos de japonés</p></div>
+          <h3 class="h4">Inglés</h3><p class="mb-0">Certificación TOEFL</p>
+        </div>
+      </div></div>
+    </section>
+  </main>
+  <footer class="border-top py-4"><div class="container d-flex flex-wrap justify-content-between gap-3"><span>Ricardo Valtierra González</span><a href="#inicio">Volver al inicio</a><span lang="ja">名刺</span></div></footer>
+  <!-- MODAL DE ACCESSWORK -->
+  <div class="modal fade" id="modalProyecto" tabindex="-1" aria-labelledby="tituloModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"><div class="modal-content">
+      <div class="modal-header"><h2 class="modal-title fs-5" id="tituloModal">AccessWork · Proyecto escolar</h2><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Cerrar"></button></div>
+      <div class="modal-body p-4">
+        <p>Propuesta para prevenir riesgos y mejorar la accesibilidad en los espacios laborales.</p>
+        <img src="img/accesswork-prototipo.png" class="img-fluid w-100 mb-4" loading="lazy" alt="Vista completa del prototipo de AccessWork.">
+        <h3 class="h5">Funciones propuestas en el prototipo</h3>
+        <ul><li>Registro e inicio de sesión.</li><li>Registro de riesgos y prioridades.</li><li>Consulta de reportes y evidencias.</li><li>Asignación y seguimiento de reportes.</li></ul>
+      </div>
+      <div class="modal-footer"><button class="btn btn-rojo" type="button" data-bs-dismiss="modal">Cerrar</button></div>
+    </div></div>
+  </div>
+  <!-- ÚNICO SCRIPT: BOOTSTRAP OFICIAL -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+html { scroll-behavior: smooth; }
+body { font-family: Arial, sans-serif; color: #1c1c1c; line-height: 1.6; }
+section, header { scroll-margin-top: 90px; }
+a { color: #1c1c1c; }
+
+.rojo { color: #b51f2c; }
+.rojo-claro { color: #f3a0a9; }
+.etiqueta { font-size: 12px; letter-spacing: 2px; font-weight: bold; }
+.seccion { padding: 70px 0; }
+.titulo { font-family: Georgia, serif; font-size: 40px; font-weight: normal; }
+
+/* Barra de navegación */
+.sello { display: inline-block; width: 42px; height: 42px; text-align: center; line-height: 42px; background: #b51f2c; color: white; }
+.marca { font-size: 12px; line-height: 1.5; }
+.marca small { font-size: 12px; color: #636363; }
+.navbar .nav-link { font-size: 14px; }
+.navbar .nav-link:hover, .navbar .nav-link.active { color: #b51f2c; }
+
+/* Presentación y fondo */
+.hero { padding: 120px 0 30px; background-image: url("img/sakura.png"); background-repeat: no-repeat; background-position: right bottom; background-size: 600px; }
+.nombre { font-family: Georgia, serif; font-size: 60px; font-weight: normal; line-height: 1; }
+.nombre span { color: #b51f2c; font-style: italic; }
+
+/* Botones y tarjetas */
+.btn, .card, .modal-content, .navbar-toggler { border-radius: 0; }
+.btn-rojo { background: #b51f2c; color: white; border-color: #b51f2c; }
+.btn-rojo:hover, .btn-rojo:active { background: #921925; color: white; border-color: #921925; }
+.marco { border: 1px solid #dddddd; background: white; padding: 15px; }
+
+/* Imágenes y carrusel */
+.foto { width: 100%; height: 260px; object-fit: cover; }
+.carousel .foto { height: 350px; background: #1c1c1c; }
+.vertical { object-fit: contain; }
+.carousel-item { transition-duration: 5s; }
+.control { width: 42px; height: 42px; border: 1px solid #dddddd; background: white; font-size: 24px; }
+.control:hover { background: #b51f2c; color: white; }
+
+/* Habilidades y proyecto */
+.habilidades { background: #1c1c1c; color: white; }
+.habilidades .card { background: #1c1c1c; color: white; border-color: #555555; }
+.proyecto { background: #f3f3f3; }
+
+/* Experiencias */
+.experiencias { background: #fafafa; border-top: 1px solid #dddddd; }
+.experiencias .card { border-color: #dddddd; }
+.experiencias .card-img-top { border-radius: 0; }
+.experiencias .card-body p { color: #636363; }
+.conversacion, .charla { object-position: top; }
+
+/* Modal y pie de página */
+.modal-content { border-top: 4px solid #b51f2c; }
+.pie { padding: 20px; text-align: center; border-top: 1px solid #dddddd; }
