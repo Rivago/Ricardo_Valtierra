@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detalle | Encuentrapp</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Material+Symbols+Outlined&display=block" rel="stylesheet">
+  <link href="estilo.css" rel="stylesheet">
+</head>
+<body>
+  <header class="cabecera">
+    <a class="logo" href="index.html"><b class="marca">e</b><span>Encuentr<span class="verde">app</span></span></a>
+    <a href="cuenta.html"><span class="material-symbols-outlined" aria-hidden="true">person</span> Ingresar</a>
+  </header>
+  <main class="panel detalle">
+    <a class="volver" href="modulo.html">← Volver a las publicaciones</a>
+    <article id="contenido">
+      <img class="foto-detalle" id="detalle-foto" src="img/cartera.jpg" alt="Cartera café">
+      <p class="estado" id="detalle-tipo">Encontrado</p>
+      <h1 id="detalle-titulo">Cartera café</h1>
+      <p><span class="material-symbols-outlined" aria-hidden="true">location_on</span> <span id="detalle-ubicacion"></span></p>
+      <p><span class="material-symbols-outlined" aria-hidden="true">calendar_month</span> <span id="detalle-fecha"></span></p>
+      <p id="detalle-descripcion"></p>
+      <button class="boton" data-bs-toggle="modal" data-bs-target="#chat"><span class="material-symbols-outlined" aria-hidden="true">chat_bubble</span> Contactar</button>
+    </article>
+    <p id="no-encontrada" role="status"></p>
+  </main>
+  <section class="modal fade" id="chat" tabindex="-1" aria-labelledby="titulo-chat" aria-hidden="true">
+    <article class="modal-dialog modal-dialog-centered"><section class="modal-content">
+      <header class="modal-header"><h2 class="modal-title fs-5" id="titulo-chat">Chat de demostración</h2><button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button></header>
+      <section class="modal-body"><p class="aviso">Los mensajes solo se muestran en esta vista.</p><section id="mensajes" aria-live="polite"><p class="burbuja">Hola, ¿puedes describir el objeto que perdiste?</p></section></section>
+      <footer class="modal-footer"><form class="buscador" id="chat-form"><input id="mensaje" required maxlength="300" placeholder="Escribe un mensaje…" aria-label="Mensaje"><button class="btn btn-success">Enviar</button></form></footer>
+    </section></article>
+  </section>
+  <footer class="pie">
+    <p>Encuentrapp · Conectamos personas con lo que importa</p>
+    <nav class="menu" aria-label="Menú principal">
+      <a class="activo" href="index.html"><span class="material-symbols-outlined" aria-hidden="true">home</span>Inicio</a>
+      <a href="publicar.html"><span class="material-symbols-outlined" aria-hidden="true">add_circle</span>Publicar</a>
+      <a href="modulo.html"><span class="material-symbols-outlined" aria-hidden="true">article</span>Mis publicaciones</a>
+      <a href="perfil.html"><span class="material-symbols-outlined" aria-hidden="true">person</span>Perfil</a>
+    </nav>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

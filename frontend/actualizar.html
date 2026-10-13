@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Actualizar | Encuentrapp</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Material+Symbols+Outlined&display=block" rel="stylesheet">
+  <link href="estilo.css" rel="stylesheet">
+</head>
+<body>
+  <header class="cabecera">
+    <a class="logo" href="index.html"><b class="marca">e</b><span>Encuentr<span class="verde">app</span></span></a>
+    <a href="cuenta.html"><span class="material-symbols-outlined" aria-hidden="true">person</span> Ingresar</a>
+  </header>
+  <main class="panel">
+    <h1>Actualizar publicación</h1>
+    <form id="formulario" data-editar="si">
+      <label class="campo">Tipo<select id="tipo"><option>Encontrado</option><option>Perdido</option></select></label>
+      <label class="campo">Categoría<select id="categoria"><option value="objeto">Objeto</option><option value="mascota">Mascota</option><option value="documento">Documento</option></select></label>
+      <label class="subir"><span class="material-symbols-outlined" aria-hidden="true">photo_camera</span>Elige una foto
+        <select id="foto"><option value="img/cartera.jpg">Cartera</option><option value="img/llaves.jpg">Llaves</option><option value="img/mochila.jpg">Mochila</option><option value="img/mascota.jpg">Mascota</option><option value="img/documento.jpg">Documento</option></select>
+      </label>
+      <label class="campo">Título del objeto<input id="titulo" required maxlength="60" placeholder="Ejemplo: cartera café"></label>
+      <label class="campo">Descripción<textarea id="descripcion" required maxlength="400" rows="3" placeholder="Describe el objeto"></textarea></label>
+      <label class="campo">Ubicación<input id="ubicacion" required maxlength="100" placeholder="¿Dónde se perdió o encontró?"></label>
+      <label class="campo">Fecha (opcional)<input id="fecha" type="date"></label>
+      <button class="boton" type="submit">Guardar cambios</button>
+      <a class="volver" href="modulo.html">Volver a mis publicaciones</a>
+    </form>
+  </main>
+  <footer class="pie">
+    <p>Encuentrapp · Conectamos personas con lo que importa</p>
+    <nav class="menu" aria-label="Menú principal">
+      <a href="index.html"><span class="material-symbols-outlined" aria-hidden="true">home</span>Inicio</a>
+      <a class="activo" href="publicar.html"><span class="material-symbols-outlined" aria-hidden="true">add_circle</span>Publicar</a>
+      <a href="modulo.html"><span class="material-symbols-outlined" aria-hidden="true">article</span>Mis publicaciones</a>
+      <a href="perfil.html"><span class="material-symbols-outlined" aria-hidden="true">person</span>Perfil</a>
+    </nav>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
