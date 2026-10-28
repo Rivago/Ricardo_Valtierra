@@ -1,0 +1,70 @@
+ 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Temperaturas de la semana</title>
+</head>
+<body>
+
+    <header class="container-fluid p-4 bg-primary text-white text-center">
+        <h1>Temperatura semanal</h1>
+        <p>Arreglo unidimensional</p>
+    </header>
+
+    <section class="container mt-4">
+        <h3>Captura la temperatura de los 7 días</h3>
+
+        <div>
+
+            <div class>
+                <label for="dia0">Lunes</label>
+                <input type="number"  id="dia0" >
+            </div>
+
+            <div>
+                <label for="dia1">Martes</label>
+                <input type="number"  id="dia1" >
+            </div>
+
+            <div>
+                <label for="dia2">Miércoles</label>
+                <input type="number" id="dia2" >
+            </div>
+
+            <div>
+                <label for="dia3">Jueves</label>
+                <input type="number"  id="dia3" >
+            </div>
+
+            <div>
+                <label for="dia4">Viernes</label>
+                <input type="number"  id="dia4" >
+            </div>
+
+            <div>
+                <label for="dia5">Sábado</label>
+                <input type="number"  id="dia5">
+            </div>
+
+            <div>
+                <label for="dia6">Domingo</label>
+                <input type="number" id="dia6" >
+            </div>
+
+        </div>
+
+        <button class="btn btn-warning" onclick="calcularTemperaturas()">
+            Calcular temperaturas
+        </button>
+
+        <hr>
+        <article id="resultadoTemperaturas" class="bg-light p-3"></article>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
