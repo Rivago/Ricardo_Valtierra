@@ -1,0 +1,79 @@
+ 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Pago por puesto y nivel</title>
+</head>
+<body>
+
+    <header class="container-fluid p-4 bg-primary text-white text-center">
+        <h1>Cálculo de sueldos</h1>
+        <p>Arreglo bidimensional</p>
+    </header>
+
+    <section class="container mt-4">
+        <h3>Pago por hora</h3>
+
+        <table class=" text-center">
+            <tr class="table-primary">
+                <th>Puesto</th>
+                <th>Newbe</th>
+                <th>Jr</th>
+                <th>Sr</th>
+            </tr>
+            <tr>
+                <td>Diseñador</td>
+                <td>120</td>
+                <td>240</td>
+                <td>210</td>
+            </tr>
+            <tr>
+                <td>Programador</td>
+                <td>240</td>
+                <td>280</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>Líder</td>
+                <td>400</td>
+                <td>600</td>
+                <td>3000</td>
+            </tr>
+        </table>
+
+        <h3>Captura los datos</h3>
+
+        <label for="puesto">Puesto:</label>
+        <select id="puesto" >
+            <option value="">Selecciona un puesto</option>
+            <option value="0">Diseñador</option>
+            <option value="1">Programador</option>
+            <option value="2">Líder</option>
+        </select>
+
+        <label for="nivel">Nivel:</label>
+        <select id="nivel">
+            <option value="">selecciona nvl</option>
+            <option value="0">Newbe</option>
+            <option value="1">Jr</option>
+            <option value="2">Sr</option>
+        </select>
+
+        <label for="horas">Horas de trabajo:</label>
+        <input type="number" id="horas" min="1">
+
+        <button class="btn btn-success" onclick="calcularSueldo()">
+            Calcular sueldo
+        </button>
+
+        <hr>
+        <article id="resultadoSueldo"></article>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
