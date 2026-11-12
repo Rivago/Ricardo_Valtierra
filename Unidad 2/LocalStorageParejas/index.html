@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Volúmenes y Áreas</title>
+</head>
+<body>
+
+    <main>
+        <h1>Calculadora de Áreas y Volúmenes</h1>
+        <p>Selecciona una figura para comenzar</p>
+
+        <div class="figuras">
+            <section>
+                <h2>Volumen</h2>
+                <button onclick="elegir('cubo')">Cubo</button>
+                <button onclick="elegir('esfera')">Esfera</button>
+                <button onclick="elegir('prisma')">Prisma Triangular</button>
+            </section>
+
+            <section>
+                <h2>Área</h2>
+                <button onclick="elegir('trapecio')">Trapecio</button>
+                <button onclick="elegir('hexagono')">Hexágono</button>
+                <button onclick="elegir('triangulo')">Triángulo Rectángulo</button>
+            </section>
+        </div>
+
+        <h2 id="titulo">Elige una figura</h2>
+
+        <div id="datos"></div>
+
+        <button class="calcular" onclick="calcular()">Calcular</button>
+
+        <p id="resultado"></p>
+
+        <h2>Historial</h2>
+        <pre id="historial"></pre>
+
+        <button class="limpiar" onclick="limpiarHistorial()">
+            Limpiar historial
+        </button>
+    </main>
+
+    <script src="funcion.js"></script>
+    <footer>
+        <p>© 2026 Calculadora de Áreas y Volúmenes <br>
+            Hecho por Ricardo Valtierra González y Juan Pablo Espinosa Macias<br>
+
+        </p>
+    </footer>
+</body>
+</html>
