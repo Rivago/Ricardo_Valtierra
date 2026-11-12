@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#69f, #9cf);
+    margin: 0;
+    padding: 30px;
+    color: #333;
+}
+
+main {
+    background-color: white;
+    max-width: 700px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #00000020;
+    text-align: center;
+}
+
+
+h1 {
+    color: #a2d2ff;
+    font-size: 36px;
+    font-family: sans-serif;
+    border-bottom: 2px solid #a2d2ff;
+    border-radius: 6px;
+}
+
+h2 {
+    color: #222;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+p {
+    color: #333;
+    box-sizing: border-box;
+   
+}
+
+
+.figuras {
+    display: flex;
+    gap: 20px;
+    margin: 25px 0;
+}
+
+section {
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 25px;
+    flex: 1;
+}
+
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background: linear-gradient(to right, rgba(102, 153, 255, 0.24), #69f);
+}
+
+section button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+
+#datos {
+    margin: 20px 0;
+}
+
+li{
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+}
+
+input {
+    padding: 10px;
+    margin: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 130px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #555;
+    border-top: 1px solid #ccc;
+}
+
+
+.calcular {
+    background-color: #16a34a;
+    padding: 12px 30px;
+}
+
+.calcular:hover {
+    background: linear-gradient(to right, rgba(130, 233, 173, 0.24), rgb(55, 233, 94));
+}
+
+
+#resultado {
+    font-size: 20px;
+    font-weight: bold;
+    color: #16a34a;
+}
+
+
+#historial {
+    background-color: #f1f5f9;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 25px;
+    text-align: justify; 
+}
+
+.limpiar {
+    background-color: #dc2626;
+}
+
+.limpiar:hover {
+    background: linear-gradient(to right, rgba(220, 38, 38, 0.24), #dc2626);
+}
+
+
+@media (max-width: 600px) {
+    .figuras {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 10px;
+
+}
+
+}
